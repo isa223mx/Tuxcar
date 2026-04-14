@@ -1,9 +1,9 @@
-import Navbar from "@/components/nabvar";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      
+      <h1>este es el contenido de inicio</h1>
 
       
     </div>

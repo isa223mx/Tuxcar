@@ -4,6 +4,7 @@ import { Heart, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { NavigationMenuDemo } from "./menu-list";
 import MenuMobile from "./menu-mobile";
+import ToggleTheme from "./toggle-theme";
 
 const Navbar = () =>{
     const router = useRouter();
@@ -20,6 +21,7 @@ const Navbar = () =>{
         </div>
         <div className="flex sm:hidden"><MenuMobile /></div>
         <div className="flex items-center justify-between gap-2 sm:gap-7">
+          <ToggleTheme/>
             <Heart
           strokeWidth={1}
           className="cursor-pointer"
