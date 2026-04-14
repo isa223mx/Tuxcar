@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Admin",
+  title: "Tuxcar",
   description: "Sistema de gestión automotriz",
 }
 const urbanist = Urbanist({
