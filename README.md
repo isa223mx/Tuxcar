@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Sistema de Gestión - Sector Automotriz
 
-## Getting Started
+Aplicación web desarrollada con **Next.js** para la gestión de una concesionaria automotriz.
+Permite administrar vehículos, clientes y operaciones internas de manera eficiente.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tecnologías utilizadas
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+* nextjs-toploader
+
+---
+
+## ⚙️ Instalación
+
+Clonar el repositorio:
+
+```
+git clone <URL_DEL_REPO>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Entrar al proyecto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd frontend
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Instalar dependencias:
 
-## Learn More
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ▶️ Ejecutar en desarrollo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+Abrir en el navegador:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📦 Comandos útiles
+
+Crear proyecto Next.js:
+
+```
+npx create-next-app@latest frontend
+```
+
+Inicializar shadcn/ui:
+
+```
+npx shadcn@latest init
+```
+
+Agregar componentes:
+
+```
+npx shadcn@latest add button
+```
+
+Instalar loader de navegación:
+
+```
+npm install nextjs-toploader
+```
+npm install lucide@next // para iconos
+ npx shadcn@latest add navigation-menu //menu de navegacion
+ npx shadcn@latest add popover  // menu en mobile
+ npx shadcn@latest add separator //separador
+ 
+---
+
+## 🎨 Componentes instalados
+
+### 🧩 UI (shadcn)
+
+* Button
+
+Para agregar más componentes:
+
+```
+npx shadcn@latest add <nombre-componente>
+```
+
+Ejemplos:
+
+```
+npx shadcn@latest add input
+npx shadcn@latest add card
+npx shadcn@latest add dialog
+```
+
+---
+
+## ⚡ Funcionalidades adicionales
+
+### 🔄 Barra de carga (NextTopLoader)
+
+Se implementó una barra de carga superior para mejorar la experiencia de usuario durante la navegación entre páginas.
+
+---
+
+## 📁 Estructura básica
+
+```
+/app
+/components
+  /ui
+/lib
+```
+
+---
+
+## 👨‍💻 Autor
+
+Carlos Perez
+ 
