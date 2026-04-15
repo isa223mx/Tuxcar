@@ -4,6 +4,8 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/nabvar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Metadata } from "next";  
+import NextTopLoader from "nextjs-toploader";
+import { ClerkProvider } from "@clerk/nextjs";
 
 
 export const metadata: Metadata = {
@@ -20,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className={urbanist.className}> 
+        <NextTopLoader color="#000" />
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -34,5 +38,6 @@ export default function RootLayout({
         </ThemeProvider>
         </body>
     </html>
+    </ClerkProvider>
   );
 }
